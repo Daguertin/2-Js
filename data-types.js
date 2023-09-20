@@ -166,7 +166,7 @@ ex. console.log(math.sqrt)(-1)) returns NaN as sqrt of a negative number is an i
 
     Assignment Operator 
     let myName = "Dan" //assigns value of dan to the variable (myName)
-    console.log(myName)
+    console.log(myName)cl
 
     Comparison
     console.log(myName == "Dan") (True) (double)

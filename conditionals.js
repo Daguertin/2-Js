@@ -1,4 +1,4 @@
-/* ? Conditionals and Logic Gates
+/* /* ? Conditionals and Logic Gates
     * conditonal statement checks if an expression is truthy
     * the expression must always resolve to true
     * if its truthy, a code within a statement executes
@@ -76,7 +76,8 @@
         * how would you handle this if a user imputs nota  number? ex. "potato"
          */
 
-    let age >= 82
+    // (Could be simplified)
+    /* let age >= 82
     if age >= 16 {
         console.log("they cant drink");
     }
@@ -94,8 +95,68 @@
     }
 
     /* 
+
     ! Important Thought
         * if you want your condition to display any possible match create (if) statements (not else if) 
-        * if you want your condition to display ONE exact match, chain your conditional statements (else if)*/
+        * if you want your condition to display ONE exact match, chain your conditional statements (else if)
+        * */
 
-    c
+    /* 
+    ? Ternaries - (condition ? expression(if true) : expression(if false))
+        * an expression
+        * a quick way of creating if/else conditionals
+        * commonly used to check a quick condition
+        
+        */
+
+    let ignition = true;
+
+    ignition ? console.log("Car is ready to start") : console.log("Turn ingnition on");
+ 
+    /* ? Chaining Ternaries ( ? (expression if true) 
+    : else if expression ? expression if true
+    : else if expression ? expression if true
+    : else if expression ? expression if true
+    : else or null
+        
+    ! IF you do not have an else statement, you must use a null to avoide Syntax Error
+     */
+
+    if (season == 1) {
+        console.log("spring");
+    } else if (season == 2){
+        console.log("summer")
+    }
+    
+    season == 1 ? console.log("spring")
+                : season == 2 ? console.log("Summer")
+                : season == 3 ? console.log("Fall")
+                : season == 4 ? console.log("Winter")
+                :null
+
+ /*                (Could be simplified)
+    let age = 82
+    
+        age < 16 ? console.log("Cannot drive");
+            : age < 18 ? console.log("Can drive");
+            : age < 21 ? console.log("Can vote")
+            : age > 21 ? console.log("Have a drink");
+            : console.log("Enter valid number");
+
+    /* Switch Statements
+        * execute a block of code dependent upon a different case
+        * we ask a question requiring specific response determined by our answer */
+
+    let uprightinstructor = "Dan"
+    // condition that cases are compared against (switch statement)
+    // execute the code below 
+   /*      case "Dan": */
+            console.log(`${uprightinstructor} is a Senior Lead SD`)
+            // used to stop other cases from evaluating (break)
+            /* break */
+/*         case "Rob":
+/*  */            console.log(`${uprightinstructor} is a Lead SD Instructor`)
+ */            break/*
+/*         default:
+ */            console.log(`${uprightinstructor} may not work here`)
+ */ */
