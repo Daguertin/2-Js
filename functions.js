@@ -6,7 +6,7 @@
     * return a result
     * need to be invoked (called) to run
     * can have none, one, or many parameters
-    * data coming throught he parameters is called an argument
+    * data coming throught the parameters is called an argument
     * can only have one return statement value
     * if no return is provided, it defaults to undefined
 
@@ -150,3 +150,11 @@ let concatenateStr = (str1, str2) => {
     }
 
     console.log(Pythagrean(5, 7))
+
+    /* 
+    TODO: HINT - Ternaries are expressions, not statements
+        * they need to be "located/captured" in their entirety into a seperage placeholder
+    (variable) (think of boxes and content)
+        * then that variable can be returned for the function to return something other than
+    undefined.
+     */
