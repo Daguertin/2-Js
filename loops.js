@@ -6,7 +6,7 @@
 ?   Traidtional for loop
 
 ?Syntax
-    for (start; step) {
+    for (start; stop; step) {
         code block to execute
     }
     
@@ -14,11 +14,15 @@
     * iterable - ("ex: longWord") value we can re-iterate/loop over
     */
 
-/*     for (let i=0; i<10, i = i + 1 ){
- */        console.log(i)
-    // }
-    
-    // an infinate loop is a loop without a stop condition
+/*    
+for(let range = 1; range = 100; range++)
+{console.log(range)
+}
+    ? Infinite Loop - a loop without a stop condition
+for (let i = 0;; i++) {
+console.log(i)
+}
+    * Control C stops an endless loop
     
 /* 
 ? For-in Loop
@@ -32,7 +36,6 @@ let longWordDE = "someverylongword"
 for (i in longWordDE) {
     console.log(`Index: ${i} Letter: ${LongwordDE[i]}`)
 }
-// Control C stops an endless loop
 
 /* 
 ? For-of Loop
@@ -59,13 +62,25 @@ for (i in longWordDE) {
     2
         * Reverse a string
         */
+    console.log("----------------------------------------")
+    let words = "It's nice to meet you"
     
-    // let (C = 0; C < 100; C = C + 1) {console.log(C)}
-    let good = "successfully complete the course, or find ourselves leaving satisfied."
-    for (C in "successfully complete the course, or find ourselves leaving satisfied.") {console.log(`Index: ${C} Letter ${"successfully complete the course, or find ourselves leaving satisfied."[C]}`)
-}
-    if (C = a, A, i, I, o, O, u, U, e, E, y, Y) {console.log([C])}
-        // (Cin good)
+    let counts = 0
+    for (ltr of word) {
+        if (ltr == "a" || ltr == "e" || ltr == "u" || ltr == "o" || ltr == "i") {
+            console.log(ltr)
+            // count = count + 1
+            // count++
+            counts += 1
+        }
+    }
+    console.log(`Total amount of vowels is: ${counts}`)
+    
+    let name = "Brandon"
+    
+    for (let i = name.length - 1; i >= 0; i = i - 1) {
+        console.log(name[i])
+    }
 
 //  I want to assign a counter with a max value
 //  I want to assign a sentence as a variable
@@ -74,25 +89,6 @@ for (i in longWordDE) {
 //  Insert the counter into the sentence
 //  Lable the counter as letter #
 //  
-
-let word = "Hi, nice to greet you"
-
-let count = 0
-for (ltr of word) {
-    // if (ltr == "a" || ltr =="e" || ltr == "o" )etc {
-        console.log(ltr)
-        // count = count +1
-        // is the same as count +=1
-        count += 1
-    }
-// }
-
-    console.log(`Total amount vowels is ${count}`)
-
-
-    for (ltr of word) {
-        console.log(ltr)
-    }
 
     /* 
     ? While Loop
@@ -123,4 +119,4 @@ for (ltr of word) {
 
         do {console.log(doCount)
         doCount += 1
-    // }   while (doCount <= 100) */
+     }   while (doCount <= 100) */

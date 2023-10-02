@@ -76,17 +76,19 @@ console.log(nameAge("Dan", 28))
     *Remember PEMDAS!
     */
 
-    let quadraticforumla = function(a, b, c) {
-        let sqrtResult = Math.sqrt(b**2 -4 * a * c)
-        if (isNaN)(sqrtResult) =>
-        {   return "Please return whole numbers which result in a positve"
+    let quadraticFormula = function(a, b, c) {
+        let sqrtResult = Math.sqrt(b**2 - 4 * a * c)
+        if (isNaN(sqrtResult)) {
+            return "Please make sure you use whole numbers which result in a positive discriminant"
+        } else {
+            let addResult = (-b + sqrtResult) / 2 * a
+            let subResult = (-b - sqrtResult) / 2 * a
+            return `The solution is ${addResult} and ${subResult}`
         }
-        let addResult =(-b + sqrtResult) / 2 * a
-        let subResult =(-b - sqrtResult) / 2 * a
-        return `The solution is ${addResult} and ${subResult}`
-    // console.log(sqrtResult, addResult, subResult)    
-}
-// quadraticforumla(1, -11, 24)
+    }
+    
+    // console.log(quadraticFormula(1, -11, 24))
+    
 
 /* 
 ? Arrow Functions
@@ -116,7 +118,7 @@ console.log(greetEveryone())
     * can have as many params as you want 
 */
 let concatenateStr = (str1, str2) => {
-    if (typeof str1 === 'string' && typeof str2 === "string"){
+    if (typeof str1 === "string" && typeof str2 === "string"){
         return str1 + str2
     } else {
         return "You can only pass string values as arguments"

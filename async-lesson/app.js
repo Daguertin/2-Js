@@ -1,6 +1,7 @@
 /* 
     ? Promises
     * an object that may produce a singular value in the future
+    * This is useful for when you have to/choose to wait and then (recall) the object
 
     ? Three States
     * Pending (unfinished)
@@ -21,8 +22,7 @@ function promiseFx() {
         // reject("A promise lies here")
         setTimeout(() => {
             resolve("After 3 seconds, it resolves")
-        }, 3000);
-    })
+        }, 3000);})
 }
 
 // console.log(promiseFx())
@@ -40,7 +40,48 @@ promiseFx()
 
     /* 
     ? Asynchronous Functions
-        *introduced in ES7 
+        * introduced in ES7 
+        * alternative to writing promises
+        * a function that returns a promise object
+        * allows us to resolve or reject a promise
+        
+    ? Syntax
+    async function myFx { }
+    const myFx = async function() { }
+    const myFx = async {} => { }
     */
 
+    async function asyncmyFx() {
+        return"Hello learners!"
+    }
+
+    console.log(asyncmyFx())
+
+    // ? How do we get value out of asyncs then???
+/* 
+    * use a resolver
+    asyncFx().then(msg => console.log(msg))
+    * use an await keyword inside of another async fuction
+
+? Await Keyword
+    *can be utilized only inside of async function
+    *tells JS we must wait on a promise returning fx before moving on
+*/
+async function start() {
+    // waits for resolution of a promise
+    const result = await asyncmyFx()
+    console.log(result)
+    console.log("code runs after await b/c await maintains order")
+    }
+
+    start()
+
+    function getData() {
+        setTimeout(() => {
+            return "Isaiah"
+        }, 3000);
+    }
+    
+    let name = getData()
+    console.log(name)
 

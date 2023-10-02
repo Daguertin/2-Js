@@ -1,5 +1,5 @@
-let deposit = 0 + ()
-let withDrawel= 0 + -()
+// let deposit = 0 + ()
+// let withDrawel= 0 + -()
 // `${deposit}` + `${withDrawels}`
 // let aBalance = 0 
 // let createAccount = account => `Good day, your account balance stands at ${aBalance}`
@@ -7,7 +7,7 @@ let withDrawel= 0 + -()
 // and this   for (let i=0; i<10, i = i + 1 ){
 // console.log(i)
 
-for(let aBalance = 0 + `${deposit}` + `${withDrawel}`) {console.log(`You're account balance stands at ${aBalance}`)}
+// for(let aBalance = 0 + `${deposit}` + `${withDrawel}`) {console.log(`You're account balance stands at ${aBalance}`)}
 
 /* Create a simple banking application in JavaScript without using closures. Implement the application 
 using functions, conditionals, loops, and variables to manage a bank account.
@@ -72,3 +72,45 @@ using functions, conditionals, loops, and variables to manage a bank account.
     ** If a function changes and arguments value it does not change the parameters
     original value!!! This is something to be aware of 
     */
+
+
+    // ! Class notes are below
+
+    /* function createAccount(initial) {
+    return initial
+}
+
+let paulsChecking = createAccount(1000)
+
+console.log(paulsChecking)
+
+function deposit(amt, acct) {
+    if (amt > 0) {
+        acct += amt
+        console.log("Current balance", acct)
+    } else {
+        console.log("Enter positive number")
+    }
+}
+
+// deposit(100, paulsChecking)
+
+function withdraw(amt, acct) {
+    if (amt <= 0) {
+        console.log("Incorrect amount")
+    }
+    if (amt > acct) {
+        console.log("Insufficient balance")
+    } else {
+        acct -= amt
+        console.log("Current balance", acct)
+    }
+}
+
+// withdraw(1100, paulsChecking)
+
+function checkBalance(acct) {
+    console.log("Current balance", acct)
+}
+
+checkBalance(paulsChecking) */
